@@ -5,11 +5,20 @@ html, body {
   background: black;
 }
 
-.rain {
+#rain {
   position: absolute;
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+#rain-back-row {
+
+  display: block;
+  z-index: 1;
+  bottom: 60px;
+  opacity: 0.5;
+
 }
 
 .drop {
