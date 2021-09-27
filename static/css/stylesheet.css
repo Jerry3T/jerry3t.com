@@ -102,7 +102,7 @@ html, body {
   
 }
 
-.text, #leftRight, #rightLeft, .circle {
+.text, #leftRight, #rightLeft, .glitch {
 
   position: absolute;
   top: 50%;
@@ -110,6 +110,30 @@ html, body {
   transform: translate(-50%, -50%);
   text-align: center;
 
+}
+
+.glitch {
+  
+  animation-name: glitch;
+  animation-duration: 500ms;
+  animation-delay: 100ms;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes glitch {
+  0% {
+    transform: translateX(-2.7em) translateY(-0.65em) skew(0.2turn);
+  }
+  1% {
+    transform: translateX(-2.7em) translateY(-0.65em) skew(0);
+  }
+  20% {
+    transform: translateX(-2.7em) translateY(-0.65em) skew(0.3turn);
+  }
+  30% {
+    transform: translateX(-2.7em) translateY(-0.65em) skew(0);
+  }
 }
 
 #leftRight, #rightLeft {
